@@ -1,27 +1,49 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let carouselListDom = document.querySelector('.carousel .list');
+//step 1: get DOM
+let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
 
-    console.log("DOM carregado");
+let carouselDom = document.querySelector('.carousel');
+let SliderDom = carouselDom.querySelector('.carousel .list');
+let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let timeDom = document.querySelector('.carousel .time');
 
-    document.getElementById('next').addEventListener('click', function() {
-        console.log("Clicou em Next");
-        let currentScroll = carouselListDom.scrollLeft;
-        let itemWidth = carouselListDom.querySelector('.item').offsetWidth;
-        let nextScroll = currentScroll + itemWidth;
-        carouselListDom.scrollTo({
-            left: nextScroll,
-            behavior: 'smooth'
-        });
-    });
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
 
-    document.getElementById('prev').addEventListener('click', function() {
-        console.log("Clicou em Prev");
-        let currentScroll = carouselListDom.scrollLeft;
-        let itemWidth = carouselListDom.querySelector('.item').offsetWidth;
-        let nextScroll = currentScroll - itemWidth;
-        carouselListDom.scrollTo({
-            left: nextScroll,
-            behavior: 'smooth'
-        });
-    });
-});
+nextDom.onclick = function(){
+    showSlider('next');    
+}
+
+prevDom.onclick = function(){
+    showSlider('prev');    
+}
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+    next.click();
+}, timeAutoNext)
+function showSlider(type){
+    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+    
+    if(type === 'next'){
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carouselDom.classList.add('next');
+    }else{
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carouselDom.classList.add('prev');
+    }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('prev');
+    }, timeRunning);
+
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext)
+}

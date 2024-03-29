@@ -1,15 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
-    margin: 0;
-    background-color: #000;
-    color: #eee;
+
+* {
+    margin: 0;padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;
+}
+
+:root {
+    --color-text: #fff;
+    --bg-color: #000;
+    --text-shadow: 0 5px 10px #0004;
+    --color-sub-different: #f1683a;
+    --bg-color-arrows: #3a3737b7;
+    --bg-scroll-thumb: #0b1b0b;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-scroll-thumb);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color-text);
     font-family: Poppins;
     font-size: 12px;
 }
-a{
-    text-decoration: none;
-}
-header{
+
+header {
     width: 1140px;
     max-width: 80%;
     margin: auto;
@@ -21,8 +41,9 @@ header{
     justify-content: end;
 }
 header a{
-    color: #eee;
+    color: var(--color-text);
     margin-right: 40px;
+
 }
 /* carousel */
 .carousel{
@@ -52,21 +73,20 @@ header a{
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: #fff;
-    text-shadow: 0 5px 10px #0004;
+    color: var(--color-text);
+    text-shadow: var(--text-shadow);
 }
 .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 10px;
 }
-.carousel .list .item .title,
-.carousel .list .item .topic{
+.carousel .list .item .title, .topic{
     font-size: 5em;
     font-weight: bold;
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    color: #f1683a;
+    color: var(--color-sub-different);
 }
 .carousel .list .item .buttons{
     display: grid;
@@ -77,13 +97,13 @@ header a{
 }
 .carousel .list .item .buttons button{
     border: none;
-    background-color: #eee;
+    background-color: var(--color-text);
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
     transition: .4s ease-in-out;
-    box-shadow: 0 5px 10px #0004;
+    box-shadow: var(--text-shadow);
 }
 
 .carousel .list .item .buttons button:hover {
@@ -92,9 +112,9 @@ header a{
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
     text-transform: uppercase;
-    text-shadow: 0 5px 10px #0004;
-    border: 1px solid #fff;
-    color: #eee;
+    text-shadow: var(--text-shadow);
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
 }
 /* thumbail */
 .thumbnail{
@@ -119,7 +139,7 @@ header a{
     border-radius: 20px;
 }
 .thumbnail .item .content{
-    color: #fff;
+    color: var(--color-text);
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -146,18 +166,18 @@ header a{
 .arrows button{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: rgba(58, 55, 55, 0.719);
+    font-size: 30px;
+    background-color: var(--bg-color-arrows);
     border: none;
-    color: #fff;
+    color: var(--color-text);
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
     cursor: pointer;
 }
 .arrows button:hover{
-    background-color: #fff;
-    color: #000;
+    background-color: var(--color-text);
+    color: var(--bg-color);
 }
 
 /* animation */
@@ -247,7 +267,7 @@ header a{
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #f1683a;
+    background-color: var(--color-sub-different);
     left: 0;
     top: 0;
 }

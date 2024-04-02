@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* Topo principal da pagina */
+body{
+    font-family: "Lato", sans-serif;
+    background: #D9EFDE;
+}
+
+nav{
+    background-color: #232E26;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a{
+    font-size: large;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu {
+    padding: 16px 0;
+}
+
+nav .menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-title{
+    color: aliceblue;
+    font-size: 18px;}
+
+#contact {
+    
+    border: 1px solid #D9EFDE;
+    border-radius: 50px;
+}
+/* Topo principal da pagina  - FIM*/
+
+#main-article {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px 40px 0 40px;
+}
+
+.initial-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.initial-article {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    margin: 0 150px;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    > img {
+        height: 230px;
+        /* border-radius: 8px; */
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > .category{
+        color: #592EA9;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    > .article-title {
+        font-weight: 700;
+    }
+
+    > .article-paragraph {
+        font-weight: 400;
+        color: #6D6E76;
+    }
+
+    > button {
+        width: 120px;
+        border: none;
+        padding: 16px;
+        background-color: #FFD050;
+        font-weight: 700;
+        /* border-radius: 8px; */
+    }
+}

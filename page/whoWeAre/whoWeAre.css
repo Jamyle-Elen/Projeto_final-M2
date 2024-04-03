@@ -1,0 +1,54 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* Topo principal da pagina */
+body{
+    font-family: "Lato", sans-serif;
+    background: #D9EFDE;
+}
+
+nav{
+    background-color: #232E26;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a{
+    font-size: large;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu {
+    padding: 16px 0;
+}
+
+nav .menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-title{
+    color: aliceblue;
+    font-size: 18px;}
+
+#contact {
+    
+    border: 1px solid #D9EFDE;
+    border-radius: 50px;
+}
+/* Topo principal da pagina  - FIM*/

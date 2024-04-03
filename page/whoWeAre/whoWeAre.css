@@ -52,3 +52,60 @@ nav .menu li{
     border-radius: 50px;
 }
 /* Topo principal da pagina  - FIM*/
+
+.whoWeAre{
+    width: 450px;
+    height: 250px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #FFFFFF;
+
+}
+
+.text{
+    width: 350px;
+    height: 150px;
+    top: 120px;
+    left: 300px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    display: flex;
+}
+
+.mision{
+    max-width: 450px;
+    height: 250px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #FFFFFF;
+    
+}
+
+
+.vision{
+    width: 450px;
+    height: 250px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #FFFFFF;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div + div {
+    margin-left: 20px;
+}
+
+.vision + .mision{
+    margin-left: 20px;
+}
+

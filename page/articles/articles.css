@@ -112,3 +112,19 @@ nav .menu li{
         /* border-radius: 8px; */
     }
 }
+
+/* visible articles */
+
+.scroll-element.visible {
+    transform: scale(1);
+}
+
+.article {
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-bottom: 20px;
+}
+
+.article.visible {
+    opacity: 1;
+}

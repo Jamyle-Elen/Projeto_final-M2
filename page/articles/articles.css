@@ -109,9 +109,15 @@ nav .menu li{
         padding: 16px;
         background-color: #FFD050;
         font-weight: 700;
+        cursor: pointer;
         /* border-radius: 8px; */
     }
+
+    > button:hover {
+        background-color: #ffd050d0;
+    }
 }
+
 
 /* visible articles */
 

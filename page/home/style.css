@@ -6,7 +6,6 @@
 /* Topo principal da pagina */
 body{
     font-family: "Lato", sans-serif;
-    background: #232E26;
 }
 
 nav{
@@ -52,9 +51,9 @@ nav .menu li{
 }
 
 
-/*SEGUNDA PÁGINA*/
+/*PRIMEIRAPÁGINA*/
 #firstPage{
-    background-color: #232E26;
+    background-color: #232E26; /* REVISAR ISSO AQUI */
     height: 90vh;
     width: 100%;
     display: flex;
@@ -62,7 +61,7 @@ nav .menu li{
 }
 
 #presentation {
-    margin-top:5%;
+    margin-top: 10%;
     margin-left: 8%;
     margin-right: 50%;
     color: black;
@@ -76,7 +75,7 @@ nav .menu li{
 
 .textPresentation {
     color: #D9EFDE;
-    margin-top: 35px;
+    margin-top: 5%;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 100;
@@ -88,7 +87,7 @@ nav .menu li{
     color: black;
     padding: 12px  10px;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 5%;
     width: 170px;
     border-radius: 30px;
     border: none;
@@ -98,4 +97,56 @@ nav .menu li{
     box-shadow: 0px 0px 4px #D9EFDE;
     transition: .3s;
     transform: scale(1.1);
+}
+
+/*SEGUNDA PÁGINA*/
+#news {
+    display: flex;
+    justify-content: space-around;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.article {
+    display: inline;
+    align-items: center;
+    gap: 32px;
+    > img {
+        height: 230px;
+        /* border-radius: 8px; */
+    }
+}
+
+.content {
+    /*display: flex;*/
+    flex-direction: column;
+    gap: 20px;
+
+    > .authorName{
+        font-size: 12px;
+    }
+
+    > .article-title {
+        font-weight: 700;
+    }
+
+    > .article-paragraph {
+        font-weight: 400;
+        color: #6D6E76;
+    }
+
+    > button {
+        width: 120px;
+        border: none;
+        padding: 16px;
+        background-color: #FFD050;
+        font-weight: 700;
+        cursor: pointer;
+        /* border-radius: 8px; */
+    }
+
+    > button:hover {
+        background-color: #ffd050d0;
+    }
 }

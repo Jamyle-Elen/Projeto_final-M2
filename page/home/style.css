@@ -112,10 +112,11 @@ nav .menu li{
 
 /*SEGUNDA PÁGINA*/
 #news {
+    background-color:#D9EFDE;
     display: flex;
     justify-content: space-around;
-    padding: 0%;
-    margin: 0%;
+    margin-top: 10rem;
+    padding: 5rem;
     box-sizing: border-box;
 }
 

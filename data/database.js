@@ -1,10 +1,15 @@
 export var articles = [
   {
-    id: 1,
+    id: 1424,
     title: 'Amazônia um bioma multinacional',
     category: 'Natureza',
-    image: '',
+    image: { one: 'https://i.ibb.co/1rX1yKw/1424-1.jpg',
+             two: 'https://i.ibb.co/pwSj7tj/1424-2.jpg',
+             three: 'https://i.ibb.co/47hj6Lv/1424-3.jpg'
+            },
+
     description: 'A região amazônica, polo vital social, científico e ambiental, requer cooperação e estratégias para preservar sua biodiversidade e patrimônio cultural.',
+
     contentHTML: `
     <p> Este texto é uma introdução cuidadosamente elaborada sobre a região amazônica, destacando sua
     importância como polo social e científico no Brasil e na América do Sul. A Amazônia tem sido
@@ -43,10 +48,14 @@ export var articles = [
     <a href="http://cienciaecultura.bvs.br/pdf/cic/v66n3/v66n3a10.pdf"><h3>Artigo Completo</h3</a>`
   },
   {
-    id: 2,
+    id: 7432,
     title: 'Desmatamento na Amazônia: dinâmica, impactos e controle',
     category: 'Desmatamento',
-    image: '',
+    image: { one: 'https://i.ibb.co/5KrYnnm/7432-3.jpg',
+             two: 'https://i.ibb.co/Kmz6dBG/7432-1.jpg',
+             three: 'https://i.ibb.co/hXHx4ZG/7432-2.jpg'
+   },
+
     description: 'O artigo de 2006 discute o desmatamento na Amazônia, destacando suas causas, impactos ambientais e sociais, além da urgência de controle para preservar serviços e biodiversidade.',
     contentHTML: `
     <p> Este artigo, publicado em 2006, discute a dinâmica, impactos e controle do desmatamento na
@@ -97,10 +106,14 @@ export var articles = [
     <a href="https://www.scielo.br/j/aa/a/97R3WH4L93x74Sr5q7X7BVy/?format=pdf&lang=pt"><h3>Artigo Completo</h3</a>`
   },
   {
-    id: 3,
+    id: 2453,
     title: 'Amazônia: recursos hídricos e sustentabilidade',
     category: 'Recursos',
-    image: '',
+    image: { one: 'https://i.ibb.co/9sxt64Y/2453-1.jpg',
+             two: 'https://i.ibb.co/LNLsVhs/2453-2.jpg',
+             three: 'https://i.ibb.co/51QvN2F/2453-3.jpg'
+   },
+
     description: 'A Bacia Hidrográfica do Amazonas é a maior do mundo, abrangendo países da América Latina. Suas águas sustentam biodiversidade e comunidades locais, mas enfrentam ameaças como desmatamento e poluição.',
     contentHTML: `
     <p> A Bacia Hidrográfica do Amazonas é a maior rede hidrográfica do mundo, estendendo-se por
@@ -149,10 +162,14 @@ export var articles = [
     `
   },
   {
-    id: 4,
+    id: 4243,
     title: 'Indicadores de sustentabilidade ambiental e de saúde na Amazônia Legal, Brasil',
     category: 'Saúde',
-    image: '',
+    image: { one: 'https://i.ibb.co/prQQTwr/4243-1.jpg',
+             two: 'https://i.ibb.co/bPwv9Ns/4243-2.jpg',
+             three: 'https://i.ibb.co/vJ4kDpP/4243-3.jpg'
+   },
+
     description: '"Estudo sobre sustentabilidade e saúde na Amazônia Legal destaca disparidades econômicas, impactos ambientais na saúde e urgência de políticas personalizadas para desenvolvimento sustentável."',
     contentHTML: `
     <p> "Sustentabilidade ambiental, indicadores socioeconômicos e de saúde na região da Amazônia
@@ -198,11 +215,46 @@ export var articles = [
     `
   },
   {
-    id: 5,
+    id: 1222,
     title: 'A sustentabilidade hídrica na bacia do rio Guamá, Amazônia Oriental/Brasil',
     category: 'Recursos',
-    image: '',
+    image: { one: 'https://i.ibb.co/m8CSrdm/1222-3.jpg',
+             two: 'https://i.ibb.co/HV0h89n/1222-2.jpg',
+             three: 'https://i.ibb.co/k4BJM8W/1222-1.jpg'
+   },
+
     description: 'Análise da sustentabilidade hídrica na Bacia do Rio Guamá destaca potencial e desafios. Índice revela variabilidade e aponta áreas prioritárias para gestão e desenvolvimento sustentável.',
-    contentHTML: ``
+    contentHTML: `
+    <p> O artigo examina a sustentabilidade dos recursos hídricos na bacia do Rio Guamá, localizada na
+parte nordeste do estado do Pará, Brasil. A bacia abrange uma área de aproximadamente 11.870
+km² e inclui 19 municípios com uma população combinada de cerca de 2,7 milhões de pessoas. </p>
+
+<p> O estudo tem como objetivo desenvolver um conjunto de indicadores específicos para a bacia do
+Rio Guamá e seus municípios, que possam ser utilizados para identificar desafios no
+gerenciamento da água e contribuir para o planejamento do uso da terra no contexto hidrográfico 
+amazônico. </p>
+
+<p> A metodologia utilizada no estudo envolve o cálculo de um índice de sustentabilidade hídrica
+(ISH) com base em variáveis hidrológicas, ambientais, sociais e de gestão. As variáveis
+hidrológicas são estimadas usando o modelo de Número de Curva, que considera dados de
+precipitação de 11 estações pluviométricas na área de influência da bacia. </p>
+
+<p> As variáveis ambientais são avaliadas com base em dados de uso e cobertura da terra, enquanto as variáveis
+sociais levam em conta o índice de desenvolvimento humano, o índice de Gini e dados de
+consumo e fornecimento de água do Sistema Nacional de Informações sobre Saneamento. As
+variáveis de gestão são avaliadas com base na capacidade dos municípios de gerenciar os
+recursos ambientais. </p>
+
+<p> Os resultados do estudo indicam que a bacia do Rio Guamá possui um alto potencial de
+sustentabilidade dos recursos hídricos, com um valor de ISH de 0,71. No entanto, existem
+variações significativas nos valores de ISH entre as diferentes sub-bacias, com a sub-bacia do
+Igarapé Mãe do Rio apresentando o valor mais baixo de 0,52.  </p>
+
+<p> O estudo também identifica áreas de preocupação, como a alta concentração de uso alterado da terra em áreas associadas ao
+agronegócio e a necessidade de aprimorar as práticas de gestão da água em alguns municípios.
+No geral, o estudo fornece insights valiosos sobre a sustentabilidade dos recursos hídricos na
+bacia do Rio Guamá e destaca a importância de considerar múltiplas variáveis no gerenciamento
+de recursos hídricos. Os resultados podem ser usados para informar decisões políticas e
+promover o desenvolvimento sustentável na região. </p>`
   }
 ]

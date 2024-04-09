@@ -156,7 +156,7 @@ nav .menu li{
         flex-direction: column;
     }
 
-    nav .menu li:nth-child(1),nav .menu li:nth-child(2),nav .menu li:nth-child(3){
-        display: none;
-    }
+    nav .menu li:nth-child(n + 1):nth-child(-n + 3) {
+    display: none;
+}
 }

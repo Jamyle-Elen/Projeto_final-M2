@@ -51,12 +51,39 @@ nav .menu li{
     border-radius: 50px;
 }
 /* Topo principal da pagina  - FIM*/
+
+
+/* Rodapé principal da pagina*/
+footer {
+    margin-top: 40px;
+    height: 150px;
+    background-color: #232E26;
+    padding: 50px 100px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D9EFDE;
+
+    > hr {
+        color: #F2F4F8;
+    }
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+/* Rodapé principal da pagina* - FIM/
+
+
 /*primeira parte*/
 .whoWeAre{
+    padding: 20px;
     width: 400px;
-    left: 20px;
-    gap: 0px;
-    opacity: 0px;
     background-color: #FFFFFF;
 }
 
@@ -94,7 +121,7 @@ nav .menu li{
 .mision{
     width: 562px;
     left: 10px;
-    padding: 40px 30px;   
+    padding: 40px 20px;   
     background-color: #FFFFFF;
 }
 
@@ -108,9 +135,10 @@ nav .menu li{
 .information{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 50vh;
-    padding: 70px;
+    padding: 0 70px;
+}
+.information2 {
+    padding: 40px;
 }
 /*terceira parte*/
 #third{
@@ -132,13 +160,14 @@ nav .menu li{
 .img2 + .information3{
     margin-left: 50px;
 }
+
 /*quarta parte*/
 #fourth{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 60px;
+    padding: 40px 30px;
 }
 
 .img3{
@@ -183,4 +212,90 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    #third {
+        flex-direction: column;
+    }
+
+    .img2 > img {
+        height: 400px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 1000px) {
+    #fourth {
+        flex-direction: column;
+    }
+
+    .img3 > img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    #information4{
+        margin: 100px 50px 0 50px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .img > img:nth-child(1){
+        display: none;
+    }
+
+    nav .menu li:nth-child(n + 1):nth-child(-n + 3) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .text{
+        display: none;
+    }
+
+    
+
+    .information {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .mision, .vision {
+        width: auto;
+    }
+
+    .information {
+        flex-direction: column;
+    }
+
+    .img {
+        height: auto;
+
+        > img{
+            height: 350px;
+        }
+    } 
+
+    .img2 > img, .img3 > img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #third, #fourth {
+        padding: 0;
+    }
+
+    .img > img {
+        height: 220px;
+    }
+
+    #information4 {
+        margin: 0 30px;
+    }
 }

@@ -53,7 +53,7 @@ function createArticle(article) {
   let linkElement = document.createElement("a");
   linkElement.setAttribute(
     "href",
-    window.location.origin + "/page/articles/test.html?id=" + article.id
+    window.location.origin + "/page/post/unicArticle.html?id=" + article.id
   );
 
   let buttonElement = document.createElement("button");

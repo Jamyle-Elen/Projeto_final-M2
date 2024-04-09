@@ -1,0 +1,177 @@
+/* Reset de Estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Topo principal da página */
+body {
+    font-family: "Lato", sans-serif;
+    background: #D9EFDE;
+}
+
+nav {
+    background-color: #232E26;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a {
+    font-size: large;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu {
+    padding: 16px 0;
+}
+
+nav .menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-title {
+    color: aliceblue;
+    font-size: 18px;
+}
+
+#contact {
+    border: 1px solid #D9EFDE;
+    border-radius: 50px;
+}
+
+/*carrosel*/
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5); /* Cor do botão */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.article-image {
+    max-width: 60%; /* Garante que o carrossel não ultrapasse a largura do contêiner pai */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda o tamanho máximo do contêiner */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+
+  }
+  
+  .carousel-slide img {
+    max-width: 60%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção original das imagens */
+  }
+  
+
+
+/* Estilização do cabeçalho do artigo */
+.spacer {
+    height: 40px; 
+}
+
+.article-header {
+    text-align: center;
+}
+
+.author-info {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.author-info img {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px; 
+    border-radius: 50%;
+}
+
+.author-date {
+    display: flex;
+    flex-direction: column; 
+}
+
+.article-title {
+    font-size: 45px; 
+    margin-top: 10px; 
+    margin-bottom: 0; 
+}
+
+.article-image {
+    margin-top: 20px;
+}
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.article-content {
+    margin-top: 40px;
+    padding: 0 150px; 
+}
+
+.article-content p {
+    margin-top: 30px; 
+    text-align: justify; 
+    font-size: 22px; 
+}
+
+.article-content li {
+    text-align: justify; 
+    font-size: 22px; 
+}
+
+/* Rodapé principal da página */
+footer {
+    height: 150px;
+    background-color: #232E26;
+    padding: 50px 100px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D9EFDE;
+}
+
+.footer-info > hr {
+    color: #F2F4F8;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Espaço entre o rodapé e o texto abaixo */
+.main-content {
+    margin-top: 30px; 
+}

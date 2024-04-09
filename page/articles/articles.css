@@ -79,8 +79,12 @@ nav .menu li{
     gap: 32px;
     > img {
         height: 230px;
+        width: 345px;
+        object-fit: cover;
         /* border-radius: 8px; */
     }
+
+    
 }
 
 .content {
@@ -133,4 +137,26 @@ nav .menu li{
 
 .article.visible {
     opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    .initial-article{
+        margin: 0;
+    }
+}
+  
+@media only screen and (max-width: 700px) {
+    .article > img {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .article{
+        flex-direction: column;
+    }
+
+    nav .menu li:nth-child(1),nav .menu li:nth-child(2),nav .menu li:nth-child(3){
+        display: none;
+    }
 }

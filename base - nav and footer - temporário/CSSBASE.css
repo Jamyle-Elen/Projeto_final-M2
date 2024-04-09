@@ -53,4 +53,28 @@ nav .menu li{
 }
 /* Topo principal da pagina  - FIM*/
 
+/* Rodapé principal da pagina*/
+footer {
+    height: 150px;
+    background-color: #232E26;
+    padding: 50px 100px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D9EFDE;
+
+    > hr {
+        color: #F2F4F8;
+    }
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+/* Rodapé principal da pagina* - FIM/
 

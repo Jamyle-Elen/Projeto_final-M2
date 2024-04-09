@@ -398,8 +398,15 @@ main {
     max-width: 800px;
     text-align: center;
     color: black;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 2px;
+}
+
+#imgPresentation {
+    flex-direction:row;
+    width: 95%;
+    border-radius: 10px;
+    
 }
 
 .nameSite{
@@ -415,6 +422,7 @@ main {
 .textPresentation {
     color: #D9EFDE;
     margin-top: 5%;
+    margin-right: 12%;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 100;
@@ -440,12 +448,15 @@ a #enterContact{
     background-color: #D9EFDE;
 }
 
+
+
 /*SEGUNDA PÁGINA*/
 #news {
+    background-color:#D9EFDE;
     display: flex;
     justify-content: space-around;
-    padding: 0%;
-    margin: 0%;
+    margin-top: 10rem;
+    padding: 5rem;
     box-sizing: border-box;
 }
 

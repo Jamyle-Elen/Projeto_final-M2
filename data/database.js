@@ -45,7 +45,7 @@ export var articles = [
     Sul, que requer cooperação, capacitação e estratégias de desenvolvimento sustentável para
     preservar sua rica biodiversidade e patrimônio cultural. </p>
     
-    <a href="http://cienciaecultura.bvs.br/pdf/cic/v66n3/v66n3a10.pdf"><h3>Artigo Completo</h3</a>`
+    <a class="direct-link" href="http://cienciaecultura.bvs.br/pdf/cic/v66n3/v66n3a10.pdf"><h3>Artigo Completo</h3></a>`
   },
   {
     id: 7432,
@@ -103,7 +103,7 @@ export var articles = [
     necessária, o desmatamento pode ser controlado, garantindo a preservação dos serviços
     ambientais vitais e da biodiversidade da Amazônia. </p>
     
-    <a href="https://www.scielo.br/j/aa/a/97R3WH4L93x74Sr5q7X7BVy/?format=pdf&lang=pt"><h3>Artigo Completo</h3</a>`
+    <a class="direct-link" href="https://www.scielo.br/j/aa/a/97R3WH4L93x74Sr5q7X7BVy/?format=pdf&lang=pt"><h3>Artigo Completo</h3></a>`
   },
   {
     id: 2453,
@@ -158,7 +158,7 @@ export var articles = [
     aquática e a proteção dos ecossistemas de áreas alagadas, especialmente nas áreas costeiras e nos
     interflúvios, nas veredas e nos buritizais, especialmente em áreas de cerrado. </p>
 
-    <a href="https://philip.inpa.gov.br/publ_livres/Preprints/2010/Val%20et%20al-Amaz%F4nia%20%20Recursos%20H%EDdricos-Preprint.pdf"><h3>Artigo Completo</h3</a>
+    <a class="direct-link" href="https://philip.inpa.gov.br/publ_livres/Preprints/2010/Val%20et%20al-Amaz%F4nia%20%20Recursos%20H%EDdricos-Preprint.pdf"><h3>Artigo Completo</h3></a>
     `
   },
   {
@@ -211,7 +211,7 @@ export var articles = [
     da região, é imprescindível adotar políticas e abordagens personalizadas para enfrentar questões
     ambientais e promover um desenvolvimento sustentável efetivo. </p>
 
-    <a href="https://www.scielo.br/j/csp/a/SjxgGG9mSzFwFSLTpbXJynG/"><h3>Artigo Completo</h3</a>
+    <a class="direct-link" href="https://www.scielo.br/j/csp/a/SjxgGG9mSzFwFSLTpbXJynG/"><h3>Artigo Completo</h3></a>
     `
   },
   {
@@ -255,6 +255,8 @@ agronegócio e a necessidade de aprimorar as práticas de gestão da água em al
 No geral, o estudo fornece insights valiosos sobre a sustentabilidade dos recursos hídricos na
 bacia do Rio Guamá e destaca a importância de considerar múltiplas variáveis no gerenciamento
 de recursos hídricos. Os resultados podem ser usados para informar decisões políticas e
-promover o desenvolvimento sustentável na região. </p>`
+promover o desenvolvimento sustentável na região. </p>
+
+<a class="direct-link" href="https://www.scielo.br/j/sn/a/xS3vMGJz7qPkW59gPgRb7cD/?format=html&lang=pt"><h3>Artigo Completo</h3></a>`
   }
 ]

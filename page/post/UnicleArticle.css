@@ -24,7 +24,28 @@ a {
     font-size: large;
     color: aliceblue;
     text-decoration: none;
+    
 }
+
+.direct-link{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    > h3 {
+        width: fit-content;
+        border: none;
+        padding: 8px 4px;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+        background-color: #FFD050;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+}
+
+
 
 .menu {
     padding: 16px 0;
@@ -128,21 +149,17 @@ nav .menu li {
 .article-image img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 30px;
 }
 
 
-.article-content {
-    margin-top: 40px;
+.main-content {
+    margin: 100px 0;
     padding: 0 150px; 
 }
 
-.article-content p {
+.main-content p {
     margin-top: 30px; 
-    text-align: justify; 
-    font-size: 22px; 
-}
-
-.article-content li {
     text-align: justify; 
     font-size: 22px; 
 }

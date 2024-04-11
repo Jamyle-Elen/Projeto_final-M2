@@ -23,14 +23,19 @@ nav{
     background-color: #232E26;
 }
 
-a{
+.menu {
+  padding: 16px 0;
+}
+
+.itensNav {
   font-size: large;
   color: #232E26;
   text-decoration: none;
 }
 
-.menu {
-  padding: 16px 0;
+.itensNav:hover {
+  color: #FFD050;
+  transition: .3s;
 }
 
 nav .menu li{
@@ -288,6 +293,8 @@ h6 {
 .socialMedia a{
     padding: 8px;
     font-size: 20px;
+    color: #232E26;
+    text-decoration: none;
 }
 
 .socialMedia a:hover{

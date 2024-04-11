@@ -20,11 +20,16 @@ nav {
     padding-right: 50px;
 }
 
-a {
+.itensNav {
     font-size: large;
     color: aliceblue;
     text-decoration: none;
-    
+    width: fit-content;
+}
+  
+.itensNav:hover {
+    color: #FFD050;
+    transition: .3s;
 }
 
 .direct-link{

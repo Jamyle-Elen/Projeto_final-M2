@@ -3,7 +3,7 @@
   margin: 0%;
   box-sizing: border-box;
 }
-/* Topo principal da pagina */
+/*NAVBAR*/
 body{
   font-family: "Lato", sans-serif;
 }
@@ -15,11 +15,11 @@ nav{
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
-#menu {
+#menuNavbar {
     background-color: #232E26;
 }
 
@@ -55,6 +55,7 @@ nav .menu li{
   border: 1px solid #232E26;
   border-radius: 50px;
 }
+/*FIM DO NAVBAR*/
 
 
 /*PRIMEIRAPÁGINA*/
@@ -130,7 +131,7 @@ nav .menu li{
   background-color:#D9EFDE;
   display: flex;
   justify-content: space-around;
-  padding: 5rem;
+  padding: 3rem;
   box-sizing: border-box;
   border-radius: 40px;
 }
@@ -138,44 +139,66 @@ nav .menu li{
 .article {
   display: inline;
   align-items: center;
-  gap: 32px;
   > img {
       height: 230px;
-      /* border-radius: 8px; */
   }
 }
 
 .content {
   /*display: flex;*/
+  display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
+}
 
-  > .authorName{
-      font-size: 12px;
-  }
+.authorName{
+      font-size: 10px;
+}
 
-  > .article-title {
+.articleTitle {
       font-weight: 700;
-  }
+      font-size: 20px;
+}
 
-  > .article-paragraph {
-      font-weight: 400;
-      color: #6D6E76;
-  }
+.articleParagraph {
+    font-weight: 400;
+    color: #6D6E76;
+}
 
-  > button {
-      width: 120px;
-      border: none;
-      padding: 16px;
-      background-color: #FFD050;
-      font-weight: 700;
-      cursor: pointer;
-      /* border-radius: 8px; */
-  }
+#buttonPress {
+    width: 120px;
+    border: none;
+    padding: 16px;
+    background-color: #FFD050;
+    font-weight: 700;
+    cursor: pointer;
+}
 
-  > button:hover {
-      background-color: #ffd050d0;
-  }
+#buttonPress:hover {
+    background-color: #ffd050d0;
+}
+
+#textNews {
+    font-size: 26px;
+    margin-block-end: 3rem;
+}
+
+.cardNews {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 400px;
+    padding: 8%;
+}
+
+.cardNewsColor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FBF6EA;
+    width: 400px;
+    padding: 8%;
 }
 
 
@@ -212,7 +235,10 @@ nav .menu li{
 }
 
 .title{
+    font-size: 36px;
     margin: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .ourTeam{
@@ -225,25 +251,55 @@ nav .menu li{
 
 .personalCard{
     background: #F4F4F4;
-    height: 324px;
+    height: 280px;
     width: 305px;
-    border-radius: 20px;
     margin: 15px;
     position: relative;
     overflow: hidden;
     text-align:  center;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.image {
+    margin-top: 30px;
+    width: 30%;
+    border-radius: 50%;
 }
 
 .personalName{
-    color: #232E26;
+    color: #232536;
     font-size: 24px;
-    line-height: 27px;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
+h6 {
+    color: #6D6E76;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia a{
+    padding: 8px;
+    font-size: 20px;
+}
+
+.socialMedia a:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+
+/*INFORMAÇÕES*/
 #informationTeam{
-  margin: 40px 200px 0 200px;
+  margin: 40px 370px 0 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .finally{
@@ -255,20 +311,22 @@ button{
   background-color: #FFD050; 
   border: none;
   color: black; 
-  padding: 15px 32px; 
+  padding: 13px 30px; 
   text-align: center; 
-  display: inline-block; 
   font-size: 16px;
   cursor: pointer;
-  border-radius: 10px;
   margin-top: 30px; 
-  margin-block-end: 40px;
+  margin-block-end: 20px;
 }
 
-.container{
+.buttonContainer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+button:hover {
+    background-color: #ffd050d0;
 }
 
 

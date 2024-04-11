@@ -54,7 +54,8 @@ nav .menu li{
 
 .logo-title{
   color: #232E26;
-  font-size: 18px;}
+  font-size: 18px;
+}
 
 #contact {
   border: 1px solid #232E26;
@@ -112,7 +113,7 @@ nav .menu li{
 }
 
 /*Botão*/
-#buttao{
+#buttonEnterContact{
     width: fit-content;
     height: fit-content;
 }
@@ -189,6 +190,8 @@ nav .menu li{
     background-color: #FFD050;
     font-weight: 700;
     cursor: pointer;
+    margin-top: 5px; 
+    margin-block-end: 3rem;
 }
 
 #buttonPress:hover {
@@ -340,7 +343,7 @@ h6 {
   justify-content: center;
 }
 
-button{
+#buttonToContact{
   background-color: #FFD050; 
   border: none;
   color: black; 
@@ -348,7 +351,7 @@ button{
   text-align: center; 
   font-size: 16px;
   cursor: pointer;
-  margin-top: 30px; 
+  margin-top: 10px; 
   margin-block-end: 20px;
 }
 

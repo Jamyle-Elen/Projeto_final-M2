@@ -144,6 +144,7 @@ nav .menu li {
 }
 
 .article-title {
+    padding: 0 35px;
     font-size: 45px; 
     margin-top: 10px; 
     margin-bottom: 0; 
@@ -199,3 +200,53 @@ footer {
 .main-content {
     margin-top: 30px; 
 }
+
+
+@media only screen and (max-width: 950px) {
+    .main-content {
+      padding: 0 80px;
+    }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .article-title {
+      font-size: 35px;
+    }
+  
+    .main-content {
+      padding: 0 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 690px) {
+    footer {
+      padding: 50px 20px;
+    }
+    nav .menu li:nth-child(n + 1):nth-child(-n + 3) {
+      display: none;
+    }
+  
+    .article-image {
+      max-width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 580px) {
+    .article-title {
+      text-align: justify;
+      padding: 0 20px;
+      font-size: 28px;
+    }
+  
+    .main-content {
+      padding: 0 25px;
+  
+      > p {
+        font-size: 18px;
+      }
+    }
+  
+    .article-image {
+      max-width: 95%;
+    }
+  }

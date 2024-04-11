@@ -19,21 +19,20 @@ const imgThree = document.getElementById('img3');
 const dadContent = document.getElementById('content');
 const titleArticle = document.getElementById('title');
 
+document.title = articleFound.title;
+
 titleArticle.innerText = articleFound.title;
 imgOne.src = articleFound.image.one;
 imgTwo.src = articleFound.image.two;
 imgThree.src = articleFound.image.three;
 
 dadContent.innerHTML = articleFound.contentHTML;
-
+document.title = articleFound.title;
 }
 
 
 
-
-
-
-
+document.getElementById('img-author').src = `https://api.dicebear.com/8.x/personas/svg?seed=${'article' + id}&randomizeIds=true&body=rounded&eyes=glasses,happy,open,wink&hair=bobBangs,buzzcut,cap,curly,curlyBun,curlyHighTop,extraLong,fade,long,mohawk,pigtails,shortCombover,shortComboverChops,sideShave,straightBun,bald,balding,beanie,bobCut,bunUndercut&mouth=bigSmile,lips,smile,smirk&nose=mediumRound,smallRound&skinColor=623d36,92594b,d78774,b16a5b,e5a07e&backgroundColor=b6e3f4`;
 
 document.addEventListener("DOMContentLoaded", function() {
     var slideIndex = 0;

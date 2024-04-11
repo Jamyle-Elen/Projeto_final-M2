@@ -14,7 +14,6 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding-left: 50px;
-  padding-right: 50px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }
@@ -31,6 +30,7 @@ nav{
   font-size: large;
   color: #232E26;
   text-decoration: none;
+  width: fit-content;
 }
 
 .itensNav:hover {
@@ -361,7 +361,7 @@ h6 {
   align-items: center;
 }
 
-button:hover {
+#buttonToContact:hover {
     background-color: #ffd050d0;
 }
 

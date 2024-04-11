@@ -31,7 +31,11 @@ nav{
 }
 
 .menu {
-    padding: 16px 0;
+    padding: 16px 16px 16px 0;
+}
+
+.hamburger {
+    display: none;
 }
 
 nav .menu li{

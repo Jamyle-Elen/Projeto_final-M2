@@ -23,7 +23,7 @@ nav{
 }
 
 .menu {
-  padding: 16px 0;
+  padding: 16px 16px 16px 0;
 }
 
 .itensNav {
@@ -365,6 +365,9 @@ h6 {
     background-color: #ffd050d0;
 }
 
+.hamburger {
+  display: none;
+}
 
 /*FOOTER*/
 /* Rodapé principal da pagina*/

@@ -77,8 +77,8 @@ nav .menu li{
   display: flex;
   margin-top: 10%;
   margin-bottom: 10%;
-  margin-left: 8%;
-  margin-right: 12%;
+  padding-inline-start: 8%;
+  padding-inline-end: 8%;
   color: black;
   font-size: 35px;
   letter-spacing: 2px;
@@ -86,7 +86,10 @@ nav .menu li{
 
 #imgPresentation {
   flex-direction:row;
-  width: 95%;
+  width: 430px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 10px;
   
 }

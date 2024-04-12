@@ -1,4 +1,4 @@
-export var articles = [
+export const articles = [
   {
     id: 1424,
     title: 'Amazônia um bioma multinacional',

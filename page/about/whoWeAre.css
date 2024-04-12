@@ -237,6 +237,10 @@ button{
 }
 
 @media only screen and (max-width: 1000px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
     #fourth {
         flex-direction: column;
     }

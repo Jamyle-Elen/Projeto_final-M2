@@ -11,7 +11,7 @@ Projeto final desenvolvido para o módulo 02, do curso Programadores do Amanhã.
 <br>
 
 <p align="center">
-  <img alt="projeto" src=".documents/preview.jpg" width="100%">
+  <img alt="projeto" src="documents/preview.jpg" width="100%">
 </p>
 <h2 id="tecnologias"></h2>
 
